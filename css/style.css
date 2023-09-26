@@ -1,0 +1,122 @@
+p, h2, h3, h4, h5, h6, hr, ol, a, ul, li {
+    color: rgb(52, 96, 52);
+    font-family: 'Courier New', Courier, monospace;
+    list-style: inside;
+}
+
+h1 {
+    border-top: 3px;
+    border-bottom: 3px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: rgb(134, 190, 134);
+    border-style: dashed;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(52, 96, 52);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h3 {
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 3px white;
+}
+
+
+body {
+    background-color: #DFEFCA;
+    text-align: center;
+}
+
+img {
+    box-shadow: 10px 10px rgb(52, 96, 52);
+    margin: 10px;
+    border:solid 2px white;
+}
+
+a {
+    color: rgb(193, 165, 220);
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background: rgb(164, 220, 155);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: border-radius 2s;
+}
+
+
+.box:hover {
+    background: rgb(164, 220, 155);
+    border-radius: 100%;
+}
+
+.animBox {
+    height: 100px;
+    width: 100px;
+    border-bottom-right-radius: 100%;
+    background: rgb(164, 220, 155);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg); transform-origin: top left;}
+}
+
+ul.nav {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #397146;
+    font-size: large;
+}
+
+ul.nav li {
+    float: left;
+    border-right: 1px solid white;
+}
+
+ul.nav li a {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+ul.nav li:last-child {
+    border-right: none;
+}
+
+ul.nav li a:hover, ul.nav li a.active {
+    background-color: rgb(142, 231, 160);
+}
+
+table, th, tr, td {
+    border: solid darkgreen;
+    border-spacing: 2px;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    width: 300px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
